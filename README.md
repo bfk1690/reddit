@@ -40,6 +40,6 @@ Run server
   
 ## Creator
 
-- [@bfk1690](https://www.github.com/octokatherine)
+- [@bfk1690](https://www.github.com/bfk1690)
 
   
