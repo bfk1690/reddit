@@ -1,4 +1,4 @@
-import {Text, View, StyleSheet, TextInput, FlatList, Image} from 'react-native';
+import {Text, View, StyleSheet, FlatList, Image} from 'react-native';
 import React, {Component} from 'react';
 import {theme} from '../../../utils/theme';
 import {gh} from '../../../utils/functions';
@@ -48,6 +48,7 @@ export class Home extends Component {
     return <Text>Hot Posts</Text>;
   };
 
+  //İnfinitie scroll
   handleLoadMore = () => {
     if (!this.duringMomentum) {
       this.setState(
@@ -84,7 +85,6 @@ export class Home extends Component {
     if (this.state.dontShowFooter) return null;
     return (
       <View style={{marginTop: gh(5), marginBottom: gh(5)}}>
-        {/* <ActivityIndicator size={'small'} color={theme.main} /> */}
         <Image
           source={require('../../../assets/reddit_loading.gif')}
           style={s.gif}

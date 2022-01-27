@@ -83,9 +83,9 @@ import Messages from '../screens/App/Messages';
 import Notifications from '../screens/App/Notifications';
 class AppStack extends React.Component {
   render() {
-    console.log(this.props, 'lkjnbhv');
     return (
       <>
+        {/* Search Bar */}
         <View style={s.searchArea}>
           <View style={s.profile} />
           <TextInput
@@ -95,6 +95,7 @@ class AppStack extends React.Component {
           />
           <View style={s.profile} />
         </View>
+        {/* Search Bar */}
         <App.Navigator
           initialRouteName={'Home'}
           screenOptions={{

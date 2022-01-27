@@ -27,7 +27,7 @@ class App extends Component {
     const {is_logged} = this.props.auth;
     const {show_search} = this.props.showsearch;
     if (!is_loaded) {
-      return <Text>LOADİNG</Text>; //TODO: Loading ekranı yapılacak
+      return <Text>LOADİNG</Text>;
     } else if (is_logged) {
       return (
         <>

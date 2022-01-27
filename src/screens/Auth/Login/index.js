@@ -21,8 +21,8 @@ export class Login extends Component {
           }}
           resizeMode="cover"
           repeat={true}
-          onBuffer={this.onBuffer} // Callback when remote video is buffering
-          onError={this.videoError} // Callback when video cannot be loaded
+          onBuffer={this.onBuffer}
+          onError={this.videoError}
           style={s.backgroundVideo}
         />
         <SafeAreaView style={s.container}>
